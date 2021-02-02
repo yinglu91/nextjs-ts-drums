@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-type Props = {
+interface DrumProps {
   drumType: string;
   onClick: () => void;
 };
 
-const Drum: React.FC<Props> = ({ drumType, onClick }) => (
+const Drum: React.FC<DrumProps> = ({ drumType, onClick }) => (
   <StyledDrum onClick={onClick}>
     <p>{drumType}</p>
   </StyledDrum>

@@ -18,6 +18,7 @@ const Home: React.FC = () => {
         <title>Next JS Drum Machine</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      
       <div className={styles.main}>
         {drums.map(drum => (
           <Drum
